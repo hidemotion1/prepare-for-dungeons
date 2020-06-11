@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="ocready();" >
+ <img id="nobita" src="1.png" style="position: absolute;left: 0; top: 0" height="100" width="80"/>
+<script>
+    function uparrowpressed() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) -5 +'px';
+    }
+    function downarrowpressed() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function rightarrowpressed() {
+        let element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) +5 +'px';
+    }
+    function leftarrowpressed() {
+        let element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) -5 +'px';
+    }
+    function moveselection(keyboardEventTypes) {
+        switch (keyboardEventTypes.keyCode) {
+            case 37:
+                leftarrowpressed();
+                break;
+            case 39:
+                rightarrowpressed();
+                break;
+            case 38:
+                uparrowpressed();
+                break;
+            case 40:
+                downarrowpressed();
+                break;
+        }}
+    <!-- this is the comment-->
+        function ocready() {
+            window.addEventListener('keydown', moveselection);
+        }
+</script>
+ </body>
+</html>

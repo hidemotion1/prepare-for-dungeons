@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh diem trung binh</title>
+</head>
+<body>
+    <input id="M" type="text"/>
+    <input id="P" type="text"/>
+    <input id="C" type="text"/>
+    <input type="button" value="tinh diem trung binh" onclick="diemtrungbinh()">
+    <input type="button" value="tinh diem tong" onclick="diemtong()">
+<script>
+    function diemtrungbinh(){
+    let math= parseInt(document.getElementById("M").value);
+    let physic=parseInt(document.getElementById("P").value);
+    let chemistry=parseInt(document.getElementById("C").value);
+        let score = (math + physic +chemistry)/3
+        alert(score);
+    }
+    function diemtong() {
+        let math= parseInt(document.getElementById("M").value);
+        let physic=parseInt(document.getElementById("P").value);
+        let chemistry=parseInt(document.getElementById("C").value);
+        let score = (math + physic +chemistry)
+        alert(score);
+    }
+</script>
+</body>
+</html>
