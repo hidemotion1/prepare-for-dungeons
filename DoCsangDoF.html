@@ -5,6 +5,26 @@
     <title>chuyen doi nhiet do</title>
 </head>
 <body>
-
+<input id="nhietdo" type="text">
+<select id="tt">
+    <option value="doC"> ĐỘ C</option>
+    <option value="doF"> ĐỘ F</option>
+</select>
+<button id="chuyendoi" type="button" onclick="calculate()">Chuyen doi</button>
+    <script>
+        function calculate() {
+            //console.log(document.getElementById("tt").value=="doC" )
+            if (document.getElementById("tt").value == "doC")
+            {
+             let nhietdo1 =parseInt(document.getElementById('nhietdo').value)*1.8 +32;
+                console.log(nhietdo1);
+                alert(nhietdo1);
+            }
+            else {
+                let nhietdo1 =(parseInt(document.getElementById('nhietdo').value)-32)/1.8;
+                console.log(nhietdo1);
+                alert(nhietdo1);}
+        }
+    </script>
 </body>
 </html>

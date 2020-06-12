@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <button onclick="printArray()">bam de thu</button>
+<script>
+    function printArray(a)
+    {
+        var len = a.length, i = 0;
+        if (len == 0)
+            console.log("Empty Array");
+        else
+        {
+            do
+            {
+                console.log(a[i]);
+            } while (++i < len);
+        }
+    }
+
+</script>
+</body>
+</html>

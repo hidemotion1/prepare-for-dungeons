@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh dien tich hinh tron</title>
+</head>
+<body>
+
+<input id="bankinh" type="text">
+<button onclick="tinhdientich()">tính diện tích</button>
+<button onclick="tinhchuvi()">tính chu vi</button>
+
+<script>
+    const Pi = 3.14
+    function tinhdientich() {
+
+        let S = Pi*(document.getElementById("bankinh").value)*(document.getElementById("bankinh").value)
+        alert("diện tích hình tròn là" +S)
+    }
+    function tinhchuvi() {
+        let C = Pi*2*(document.getElementById("bankinh").value)
+        alert("chu vi hình tròn là" +C)
+
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doyouloveme</title>
+</head>
+<body>
+<p style="position:absolute; left:285px; top:175px;">Do you love me</p>
+<br>
+<button id="Yes" onclick="yes()" style="position:absolute; left:285px; top:235px">Yes. I do</button>
+<button id="No" onmouseover="no()" style="position:absolute; left:360px; top:235px">No</button>
+<script>
+    function yes() {
+        alert("đừng yêu tôi tôi chỉ là một truyền thuyết")
+    }
+    function no(){
+        let x = Math.round(Math.random()* window.innerWidth);
+        let y = Math.round(Math.random()* window.innerHeight);
+        document.getElementById("No").style.left =x+"px";
+        document.getElementById("No").style.top =y+"px";
+}
+</script>
+</body>
+</html>
