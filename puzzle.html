@@ -56,15 +56,50 @@
             img4.src = 'chandra4.jpg'
     }
     function check() {
+
         if (img1.src.match("chandra")){
             if (img2.src.match("chandra")){
                 if (img3.src.match("chandra")){
                     if (img4.src.match("chandra")){
-                        alert("puzzle matched")
+                        setTimeout(function () {
+                            alert("puzzle matched");
+                        }, 50);
                 }
             }
         }
-    }
+    } else if (img1.src.match("vraska")){
+            if (img2.src.match("vraska")){
+                if (img3.src.match("vraska")){
+                    if (img4.src.match("vraska")){
+                        setTimeout(function () {
+                            alert("puzzle matched");
+                        }, 50);
+                    }
+                }
+            }
+        }
+    else  if (img1.src.match("nissa")){
+            if (img2.src.match("nissa")){
+                if (img3.src.match("nissa")){
+                    if (img4.src.match("nissa")){
+                        setTimeout(function () {
+                            alert("puzzle matched");
+                        }, 50);
+                    }
+                }
+            }
+        }
+    else if (img1.src.match("narset")){
+            if (img2.src.match("narset")){
+                if (img3.src.match("narset")){
+                    if (img4.src.match("narset")){
+                        setTimeout(function () {
+                            alert("puzzle matched");
+                        }, 50);
+                    }
+                }
+            }
+        }
     }
 </script>
 </body>
